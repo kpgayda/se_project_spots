@@ -64,6 +64,10 @@
 }
 
 .profile__add-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items:center;
   margin-left: auto;
   height: 52px;
   background-color: #212121;
