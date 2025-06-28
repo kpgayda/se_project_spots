@@ -21,3 +21,7 @@ The way you'll do this at work is by exporting images directly from Figma — we
 Good luck and have fun!
 
 [here](https://kpgayda.github.io/se_project_spots/)
+
+//here is the link to my video
+[here](https://www.loom.com/share/820f84b48932452cb19e1474eb2671a4?sid=3b94ea64-6da7-4874-b3a7-1e313f46fa1d)
+
