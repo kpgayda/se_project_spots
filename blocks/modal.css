@@ -1,0 +1,64 @@
+.modal{
+  display: flex;/*figured this out on my own without assistence*/
+  justify-content: center;/*figured this out on my own without assistence*/
+  align-items: center;/*figured this out on my own without assistence*/
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal__is-opened{
+  visibility: visible;
+}
+
+.modal__container{
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 32px 50px; /*32px for top and bottom, 50px for left and right*/
+  position: relative;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+}
+
+.modal__input {
+  display: block;
+  margin: 8px 0 0;
+  padding: 16px 12px;
+  border: 1px #21212140 solid;
+  border-radius: 8px;
+  width: 630px;
+  height: 52px;
+}
+
+.modal__submit-btn {
+  width: 156px;
+  height: 52px;
+  background-color: #212121;
+  border-radius: 8px;
+  padding: 18px 32px;
+}
