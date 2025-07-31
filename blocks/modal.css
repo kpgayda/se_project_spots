@@ -28,6 +28,7 @@
 .modal__close-btn {
   background: transparent;/*check*/
   border: none;/*check*/
+  background-image: url(../images/exit.png);/*check*/
   position: absolute;
   top: 32px;
   right: 50px;
@@ -56,6 +57,7 @@
   border: 1px #21212140 solid;
   border-radius: 8px;
   width: 100%;/*check*/
+  font-size: 20px;/*check*/
   /*height: 52px;*/ /*check*/
 }
 
