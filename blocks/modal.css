@@ -9,10 +9,13 @@
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
 .modal__is-opened{
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__container{
@@ -38,6 +41,12 @@
 
 .modal__title {
   margin: 0 0 32px;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #212121;
 }
 
 .modal__form {
@@ -47,6 +56,11 @@
 
 .modal__label {
   margin: 0 0 32px;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
 }
 
 .modal__input {
@@ -58,7 +72,6 @@
   border-radius: 8px;
   width: 100%;/*check*/
   font-size: 20px;/*check*/
-  /*height: 52px;*/ /*check*/
 }
 
 .modal__submit-btn {
@@ -67,4 +80,6 @@
   background-color: #212121;
   border-radius: 8px;
   padding: 18px 32px;
+  gap: 8px;
+  color: #FCF5E5;/*check*/
 }

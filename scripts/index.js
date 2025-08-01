@@ -26,7 +26,7 @@ editProfileCloseBtn.addEventListener("click", function(){
   editProfileModal.classList.remove("modal__is-opened");
 });
 
-//This ensures that the new post form will pop up when the new post button is clicked
+// This ensures that the new post form will pop up when the new post button is clicked
 newPostBtn.addEventListener("click", function(){
   newPostModal.classList.add("modal__is-opened");
 });
