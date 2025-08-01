@@ -1,7 +1,7 @@
-.modal{
-  display: flex;/*figured this out on my own without assistence*/
-  justify-content: center;/*figured this out on my own without assistence*/
-  align-items: center;/*figured this out on my own without assistence*/
+.modal {
+  display: flex; /*figured this out on my own without assistence*/
+  justify-content: center; /*figured this out on my own without assistence*/
+  align-items: center; /*figured this out on my own without assistence*/
   visibility: hidden;
   background-color: #00000080;
   position: fixed;
@@ -13,13 +13,13 @@
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
-.modal__is-opened{
+.modal__is-opened {
   visibility: visible;
   opacity: 1;
 }
 
-.modal__container{
-  box-sizing: border-box;/*check*/
+.modal__container {
+  box-sizing: border-box; /*check*/
   max-width: 730px;
   width: 100%;
   border-radius: 8px;
@@ -29,9 +29,9 @@
 }
 
 .modal__close-btn {
-  background: transparent;/*check*/
-  border: none;/*check*/
-  background-image: url(../images/exit.png);/*check*/
+  background: transparent; /*check*/
+  border: none; /*check*/
+  background-image: url(../images/exit.png); /*check*/
   position: absolute;
   top: 32px;
   right: 50px;
@@ -64,14 +64,14 @@
 }
 
 .modal__input {
-  box-sizing: border-box;/*check*/
+  box-sizing: border-box; /*check*/
   display: block;
   margin: 8px 0 0;
   padding: 16px 12px;
   border: 1px #21212140 solid;
   border-radius: 8px;
-  width: 100%;/*check*/
-  font-size: 20px;/*check*/
+  width: 100%; /*check*/
+  font-size: 20px; /*check*/
 }
 
 .modal__submit-btn {
@@ -81,5 +81,9 @@
   border-radius: 8px;
   padding: 18px 32px;
   gap: 8px;
-  color: #FCF5E5;/*check*/
+  color: #fcf5e5; /*check*/
+}
+
+@media screen {
+
 }
