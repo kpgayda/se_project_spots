@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/index.css">
-    <link rel="icon" href="favicon.ico"><!--linking an icon(favicon.ico)-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="icon" href="favicon.ico" />
+    <!--linking an icon(favicon.ico)-->
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="Spot logo" class="header__logo">
+        <img src="./images/Logo.svg" alt="Spot logo" class="header__logo" />
       </header>
       <main class="content">
-
         <section class="profile page__section">
-          <img src="./images/avatar.jpg" alt="avatar image" class="profile__avatar">
+          <img
+            src="./images/avatar.jpg"
+            alt="avatar image"
+            class="profile__avatar"
+          />
           <div class="profile__column">
             <h1 class="profile__name">Bessie</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/pencil.svg" alt="Pencil icon">Edit Profile
+              <img src="./images/pencil.svg" alt="Pencil icon" />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus.svg" alt="New post">New Post
+            <img src="./images/plus.svg" alt="New post" />New Post
           </button>
         </section>
 
         <section class="cards page__section">
           <ul class="cards__list">
             <li class="card">
-              <img src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg" alt="Val Thorens" class="card__image">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__title">Val Thorens</h2>
                 <button type="button" class="card__like-button"></button>
@@ -39,7 +47,11 @@
             </li>
 
             <li class="card">
-              <img src="./images/2-photo-by-ceiline-from-pexels.jpg" alt="Restaurant terrace" class="card__image">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="Restaurant terrace"
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__title">Restaurant terrace</h2>
                 <button type="button" class="card__like-button"></button>
@@ -47,7 +59,11 @@
             </li>
 
             <li class="card">
-              <img src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg" alt="An outdoor cafe" class="card__image">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="An outdoor cafe"
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__title">An outdoor cafe</h2>
                 <button type="button" class="card__like-button"></button>
@@ -55,15 +71,25 @@
             </li>
 
             <li class="card">
-              <img src="./images/4-photo-by-maurice-laschet-from-pexels.jpg" alt="A very long bridge, over the forest..." class="card__image">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="A very long bridge, over the forest..."
+                class="card__image"
+              />
               <div class="card__content">
-                <h2 class="card__title">A very long bridge, over the forest and through the hills</h2>
+                <h2 class="card__title">
+                  A very long bridge, over the forest and through the hills
+                </h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
 
             <li class="card">
-              <img src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg" alt="Tunnel with morning light" class="card__image">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="Tunnel with morning light"
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__title">Tunnel with morning light</h2>
                 <button type="button" class="card__like-button"></button>
@@ -71,7 +97,11 @@
             </li>
 
             <li class="card">
-              <img src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg" alt="Mountain house" class="card__image">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Mountain house"
+                class="card__image"
+              />
               <div class="card__content">
                 <h2 class="card__title">Mountain house</h2>
                 <button type="button" class="card__like-button"></button>
@@ -84,42 +114,63 @@
       <footer class="footer page__section">
         <p class="footer__text">2025 &copy; Spot</p>
       </footer>
-      <div class = "modal" id = "edit-profile-modal">
+      <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type = "button" class="modal__close-btn"></button><!--check-->
+          <button type="button" class="modal__close-btn"></button
+          ><!--check-->
           <h2 class="modal__title">Edit Profile</h2>
           <form class="modal__form">
             <label for="profile__name-input" class="modal__label">
               Image Link<!--did this on my own-->
-              <input id="profile__name-input" type="text" class="modal__input" placeholder="Type your name">
+              <input
+                id="profile__name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
             </label>
             <label for="profile__description-input" class="modal__label">
               Caption<!--did this on my own-->
-              <input id="profile__description-input" type="text" class="modal__input" placeholder="Describe yourself">
+              <input
+                id="profile__description-input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
-
-      <div class = "modal" id = "new-post-modal">
+      <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button type = "button" class="modal__close-btn"></button><!--check-->
+          <button type="button" class="modal__close-btn"></button
+          ><!--check-->
           <h2 class="modal__title">New Post</h2>
           <form class="modal__form">
             <label for="new__profile__name-input" class="modal__label">
               Image Link<!--did this on my own-->
-              <input id="new__profile__name-input" type="text" class="modal__input" placeholder="Type your name">
+              <input
+                id="new__profile__name-input"
+                type="url"
+                class="modal__input"
+                placeholder="Type your name"
+              />
             </label>
             <label for="new__profile__description-input" class="modal__label">
               Caption<!--did this on my own-->
-              <input id="new__profile__description-input" type="text" class="modal__input" placeholder="Describe yourself">
+              <input
+                id="new__profile__description-input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
     </div>
-    <script src = "scripts/index.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
