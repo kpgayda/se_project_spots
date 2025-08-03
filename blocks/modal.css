@@ -33,7 +33,7 @@
   opacity: 0.4;
   background: transparent; /*check*/
   border: none; /*check*/
-  background-image: url(../images/exit.png); /*check*/
+  background-image: url(../images/exit.svg); /*check*/
   position: absolute;
   top: 32px;
   right: 50px;
