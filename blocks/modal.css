@@ -83,6 +83,7 @@
 
 .modal__input:hover {
   cursor: pointer;
+  border-color: #212121;
 }
 
 .modal__submit-btn {
@@ -98,6 +99,7 @@
 
 .modal__submit-btn:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
