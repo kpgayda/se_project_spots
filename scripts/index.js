@@ -117,9 +117,17 @@ function getCardElement(data) {
   const cardTitleElement = cardElement.querySelector(".card__title");
   const cardImageElement = cardElement.querySelector(".card__image");
   const cardLikeButtonElement = cardElement.querySelector(".card__like-button");
+  const cardDeleteButton = cardElement.querySelector(".card__delete-button");
+
   cardLikeButtonElement.addEventListener("click", function () {
     cardLikeButtonElement.classList.toggle("card__like-button_active");
   });
+
+  cardDeleteButton.addEventListener("click", function () {
+    //cardDeleteButton.closest(".card").remove();
+    cardElement.remove();
+  });
+
   cardImageElement.alt = data.name;
   cardTitleElement.textContent = data.name;
   cardImageElement.src = data.link;
