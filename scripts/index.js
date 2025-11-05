@@ -48,6 +48,8 @@ const newPostDescriptionInput = document.querySelector(
 );
 const newPostImageInput = document.querySelector("#new__profile__name-input");
 const cardTemplate = document.querySelector("#template-element");
+const cardList = document.querySelector(".cards__list");
+const submitButtonNew = document.querySelector(".modal__submit-btn_create");
 
 //functions for repeats
 function closeModal(modal) {
@@ -71,7 +73,9 @@ editProfileCloseBtn.addEventListener("click", function () {
 });
 
 // This ensures that the new post form will pop up when the new post button is clicked
-newPostBtn.addEventListener("click", function () {
+newPostBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+
   openModal(newPostModal);
 });
 
@@ -89,18 +93,36 @@ function handelEditProfileSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  console.log(newPostImageInput.value);
-  console.log(newPostDescriptionInput.value);
   closeModal(newPostModal);
 }
+
+// This function block enables the save button in the new post form to add a new image to the display
+submitButtonNew.addEventListener("click", function (evt) {
+  evt.preventDefault();
+
+  const inputValues = {
+    name: newPostDescriptionInput.value,
+    link: newPostImageInput.value,
+  };
+  const cardElement = getCardElement(inputValues);
+  cardList.prepend(cardElement);
+  openModal(newPostModal);
+});
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
     .querySelector(".card")
     .cloneNode(true);
 
-  const cardTitle = cardElement.querySelector(".card__title");
-  const cardImage = cardElement.querySelector(".card__image");
+  const cardTitleElement = cardElement.querySelector(".card__title");
+  const cardImageElement = cardElement.querySelector(".card__image");
+  const cardLikeButtonElement = cardElement.querySelector(".card__like-button");
+  cardLikeButtonElement.addEventListener("click", function () {
+    cardLikeButtonElement.classList.toggle("card__like-button_active");
+  });
+  cardImageElement.alt = data.name;
+  cardTitleElement.textContent = data.name;
+  cardImageElement.src = data.link;
   return cardElement;
 }
 
@@ -108,7 +130,6 @@ editProfileForm.addEventListener("submit", handelEditProfileSubmit);
 newPostModal.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach(function (item) {
-  console.log(getCardElement(item));
-  //console.log(item.name);
-  //console.log(item.link);
+  const cardElement = getCardElement(item);
+  cardList.append(cardElement);
 });

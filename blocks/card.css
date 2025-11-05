@@ -35,7 +35,15 @@
   cursor: pointer;
 }
 
-.card__like-button:hover{
+.card__like-button_active {
+  background-image: url(../images/heart-like.png);
+}
+
+.card__like-button_active:hover {
+  background-image: url(../images/heart-like_hover.png);
+}
+
+.card__like-button:hover {
   opacity: 1;
 }
 
@@ -50,7 +58,7 @@
     height: 288px;
   }
 
-  .card__title{
+  .card__title {
     font-size: 16px;
   }
 }

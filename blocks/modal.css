@@ -86,7 +86,8 @@
   border-color: #212121;
 }
 
-.modal__submit-btn {
+.modal__submit-btn,
+.modal__submit-btn_create {
   width: 156px;
   height: 52px;
   background-color: #212121;
