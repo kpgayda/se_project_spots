@@ -126,6 +126,7 @@ function getCardElement(data) {
   cardDeleteButton.addEventListener("click", function () {
     //cardDeleteButton.closest(".card").remove();
     cardElement.remove();
+    cardElement = null;
   });
 
   cardImageElement.alt = data.name;
