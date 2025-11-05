@@ -10,6 +10,12 @@
   border-radius: 8px;
 }
 
+.card__delete-button {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
 /*code to automatically add three dots if text is too long*/
 .card__title {
   font-size: 20px;
@@ -50,6 +56,11 @@
 .card__content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.card__footer {
+  display: flex;
   justify-content: space-between;
 }
 
