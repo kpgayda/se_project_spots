@@ -64,8 +64,18 @@
   margin: 0 0 32px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 110.00000000000001%;
+  /*line-height: 110.00000000000001%;*/
+  line-height: 110%;
   color: #212121b2;
+}
+
+.modal__close_type_preview {
+  top: 0;
+  right: -52.5px;
+}
+
+.modal-caption {
+  color: white;
 }
 
 .modal__input {
