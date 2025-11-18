@@ -150,3 +150,9 @@ const previewModal = document.querySelector("#card-preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewModalImage = previewModal.querySelector(".modal__image");
 const previewModalCaption = previewModal.querySelector(".motal__caption");
+
+cardImageElement.addEventListener("click", function () {
+  previewModalImage.src = data.link;
+  openModal(previewModal);
+  return cardElement;
+});
