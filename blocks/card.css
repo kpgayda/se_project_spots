@@ -9,6 +9,7 @@
   margin-bottom: 12px;
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .card__delete-button {

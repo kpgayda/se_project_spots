@@ -110,7 +110,7 @@ submitButtonNew.addEventListener("click", function (evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
-  openModal(newPostModal);
+  closeModal(newPostModal);
 });
 
 function getCardElement(data) {
@@ -134,8 +134,8 @@ function getCardElement(data) {
 
   cardImageElement.addEventListener("click", function () {
     previewModalImage.src = data.link;
-    //previewModalCloseBtn
-    //previewModalCaption
+    previewModalImage.alt = data.name;
+    previewModalCaption.textContent = data.name;
     openModal(previewModal);
   });
 
@@ -156,4 +156,4 @@ initialCards.forEach(function (item) {
 const previewModal = document.querySelector("#card-preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewModalImage = previewModal.querySelector(".modal__image");
-const previewModalCaption = previewModal.querySelector(".motal__caption");
+const previewModalCaption = previewModal.querySelector(".modal__caption");
