@@ -55,6 +55,12 @@ const cardTemplate = document.querySelector("#template-element");
 const cardList = document.querySelector(".cards__list");
 const submitButtonNew = document.querySelector(".modal__submit-btn_create");
 
+//html element selections for preview
+const previewModal = document.querySelector("#card-preview-modal");
+const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
+const previewModalImage = previewModal.querySelector(".modal__image");
+const previewModalCaption = previewModal.querySelector(".modal__caption");
+
 //functions for repeats
 function closeModal(modal) {
   modal.classList.remove("modal__is-opened");
@@ -74,6 +80,11 @@ editProfileBtn.addEventListener("click", function () {
 //This ensures that the close button in the edit profile form will work properly
 editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
+});
+
+//This ensures that the close button in the preview display will work properly
+previewModalCloseBtn.addEventListener("click", function () {
+  closeModal(previewModal);
 });
 
 // This ensures that the new post form will pop up when the new post button is clicked
@@ -151,13 +162,4 @@ newPostModal.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardList.append(cardElement);
-});
-
-const previewModal = document.querySelector("#card-preview-modal");
-const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
-const previewModalImage = previewModal.querySelector(".modal__image");
-const previewModalCaption = previewModal.querySelector(".modal__caption");
-
-previewModalCloseBtn.addEventListener("click", function () {
-  closeModal(previewModal);
 });
