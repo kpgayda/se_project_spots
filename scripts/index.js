@@ -157,3 +157,7 @@ const previewModal = document.querySelector("#card-preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewModalImage = previewModal.querySelector(".modal__image");
 const previewModalCaption = previewModal.querySelector(".modal__caption");
+
+previewModalCloseBtn.addEventListener("click", function () {
+  closeModal(previewModal);
+});
