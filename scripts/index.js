@@ -44,6 +44,7 @@ const editProfileForm = editProfileModal.querySelector(".modal__form"); // class
 //html element selections for new
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
+const newPostForm = document.querySelector("#new-post-modal-form");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
@@ -121,6 +122,7 @@ submitButtonNew.addEventListener("click", function (evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
+  newPostForm.reset();
   closeModal(newPostModal);
 });
 
