@@ -107,6 +107,7 @@
   padding: 4px 8px;
   background-color: #212121;
   border-radius: 8px;
+  display: table; /*makes it so the black surrounding only covers the modal caption*/
 }
 
 .modal__input {
