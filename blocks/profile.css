@@ -22,10 +22,23 @@
 }
 
 .profile__add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   margin-left: auto; /*places the New Post button to the far right of the page*/
+  width: 149px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #fcf5e5;
+  padding: 18px 32px;
 }
 
 .profile__edit-btn {
+  display: flex;
+
   margin-top: auto; /*ensures that the edit button is at the bottom of Bessie Colmen's picture*/
   border: none;
   background-color: #fcf5e5;
