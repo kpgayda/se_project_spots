@@ -1,6 +1,7 @@
 @import url(../vendor/fonts.css);
 @import url(../vendor/normalize.css);
 @import url(../blocks/page.css);
+@import url(../blocks/header.css);
 
 /*.page {
   background-color: #fcf5e5;

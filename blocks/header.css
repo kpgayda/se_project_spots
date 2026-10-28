@@ -1,0 +1,11 @@
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex; /*this turns .header into a flex-box and .header__logo into a flex-item*/
+  justify-content: center; /*this centers .header__logo*/
+}
+
+.header__logo {
+  width: 94px;
+  height: 26px;
+}
