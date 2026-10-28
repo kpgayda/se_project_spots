@@ -2,3 +2,8 @@
   background-color: #fcf5e5;
   min-height: 100vh;
 }
+
+.page__section {
+  max-width: 1280px; /*ensures that the max width is as specified(1280px)*/
+  margin: 0 auto; /*places all content at the top of the profile page in the center*/
+}

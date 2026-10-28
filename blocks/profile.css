@@ -1,0 +1,39 @@
+.profile {
+  display: flex; /*displays Bessie Coleman(h1), Civil Aviator(p), and the two buttons to the right of her picture*/
+  padding: 34px 0 20px;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid; /*creates a line that is 1px thick, solid and has the color #212121 beneath the picture and both buttons*/
+}
+
+.profile__avatar {
+  margin-right: 20px;
+}
+
+.profile__column {
+  display: flex; /*turns the .profile__column into a flex container*/
+  flex-direction: column; /*displays the Coleman(h1), Civil Aviator(p), and the button as a column.*/
+}
+
+.profile__name {
+  margin: 0 0 12px;
+}
+
+.profile__description {
+  margin: 0;
+}
+
+.profile__add-btn {
+  margin-left: auto; /*places the New Post button to the far right of the page*/
+}
+
+.profile__edit-btn {
+  margin-top: auto; /*ensures that the edit button is at the bottom of Bessie Colmen's picture*/
+  border: none;
+  background-color: #fcf5e5;
+  gap: 8px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
