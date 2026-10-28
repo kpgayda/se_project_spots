@@ -6,6 +6,7 @@
 
 .profile__avatar {
   margin-right: 20px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -34,6 +35,10 @@
   background-color: #212121;
   color: #fcf5e5;
   padding: 18px 32px;
+}
+
+.profile__add-btn:hover {
+  opacity: 80%;
 }
 
 .profile__edit-btn {

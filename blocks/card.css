@@ -34,3 +34,7 @@
   background-color: transparent;
   opacity: 40%;
 }
+
+.card__like-btn:hover {
+  opacity: 100%;
+}
