@@ -15,7 +15,13 @@
 }
 
 .profile__name {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  color: #212121;
+  max-width: 420px;
   margin: 0 0 12px;
+  overflow: hidden;
 }
 
 .profile__description {
@@ -35,6 +41,10 @@
   background-color: #212121;
   color: #fcf5e5;
   padding: 18px 32px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .profile__add-btn:hover {
@@ -43,15 +53,14 @@
 
 .profile__edit-btn {
   display: flex;
-
   margin-top: auto; /*ensures that the edit button is at the bottom of Bessie Colmen's picture*/
   border: none;
   background-color: #fcf5e5;
   gap: 8px;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
