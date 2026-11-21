@@ -1,5 +1,6 @@
 .cards {
-  padding: 20px;
+  padding: 20px 0 40px;
+  border-bottom: 1px solid #21212166;
 }
 
 .cards__list {
@@ -9,4 +10,6 @@
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   gap: 40px 20px;
+  margin: 0;
+  padding: 0;
 }
